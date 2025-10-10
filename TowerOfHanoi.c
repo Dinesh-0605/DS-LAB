@@ -8,7 +8,7 @@ void TOH(int n,char s,char d,char t)
     {
         TOH(n-1,s,t,d);
         printf("\nMove %d disk from %c to %c",n,s,d);
-        TOH(n-1,t,d,d);
+        TOH(n-1,t,d,s);
     }
 }
 int main()
@@ -19,3 +19,4 @@ int main()
     TOH(n,'S','D','T');
     return 0;
 }
+

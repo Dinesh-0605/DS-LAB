@@ -45,6 +45,7 @@ float evaluatepostfix(STACK *s,char postfix[20])
             push(s,res);
         }
     }
+    return(pop(s));
 }
 int main()
 {
@@ -58,3 +59,4 @@ int main()
     printf("\nThe final result is:%f\n",ans);
     return 0;
 }
+
